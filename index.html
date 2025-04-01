@@ -3,27 +3,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$YESHOG – The Memecoin of Infinite Positivity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
     <style>
-        @keyframes float {
-            0% { transform: translatey(0px); }
-            50% { transform: translatey(-20px); }
-            100% { transform: translatey(0px); }
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        * {
+            box-sizing: border-box;
         }
 
         body {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: 'Fredoka', sans-serif;
             background: linear-gradient(to bottom right, #fffaf0, #ffe4e1);
             margin: 0;
             padding: 0;
             color: #333;
             text-align: center;
-            overflow-x: hidden;
         }
 
         header {
@@ -33,13 +27,13 @@
         }
 
         header h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             margin-bottom: 10px;
             animation: float 3s ease-in-out infinite;
         }
 
         header p {
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
 
         .cta-buttons {
@@ -49,8 +43,8 @@
         .cta-buttons a {
             display: inline-block;
             margin: 10px;
-            padding: 15px 30px;
-            font-size: 1.2em;
+            padding: 12px 24px;
+            font-size: 1em;
             text-decoration: none;
             color: white;
             background-color: #ff69b4;
@@ -60,37 +54,37 @@
 
         .cta-buttons a:hover {
             background-color: #ff1493;
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         .floating-hog {
             position: absolute;
-            width: 100px;
-            right: 30px;
-            top: 20px;
+            width: 80px;
+            right: 10px;
+            top: 10px;
             animation: float 4s ease-in-out infinite;
             z-index: 2;
         }
 
         .section {
-            padding: 60px 20px;
+            padding: 50px 15px;
             background: #fdfdfd;
             border-top: 2px dashed #eee;
         }
 
         .section h2 {
-            font-size: 2.5em;
+            font-size: 2em;
             margin-bottom: 20px;
             animation: float 2s ease-in-out infinite;
         }
 
         .flip-card {
             background-color: transparent;
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             perspective: 1000px;
             display: inline-block;
-            margin: 20px;
+            margin: 15px;
         }
 
         .flip-card-inner {
@@ -114,9 +108,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 1.5em;
+            font-size: 1em;
             border: 2px solid #ff69b4;
             border-radius: 10px;
+            padding: 10px;
         }
 
         .flip-card-front {
@@ -130,12 +125,24 @@
 
         .moving-bg {
             position: fixed;
-            top: 20%;
+            top: 25%;
             left: -10%;
-            width: 120px;
-            opacity: 0.5;
+            width: 100px;
+            opacity: 0.4;
             animation: moveAcross 30s linear infinite;
             z-index: 0;
+        }
+
+        footer {
+            background: #f0f0f0;
+            padding: 30px 15px;
+            font-size: 0.85em;
+        }
+
+        @keyframes float {
+            0% { transform: translatey(0px); }
+            50% { transform: translatey(-15px); }
+            100% { transform: translatey(0px); }
         }
 
         @keyframes moveAcross {
@@ -143,10 +150,27 @@
             100% { left: 120%; transform: rotate(720deg); }
         }
 
-        footer {
-            background: #f0f0f0;
-            padding: 40px 20px;
-            font-size: 0.9em;
+        @media screen and (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .flip-card {
+                width: 140px;
+                height: 140px;
+            }
+
+            .floating-hog {
+                width: 60px;
+            }
+
+            .moving-bg {
+                width: 80px;
+            }
         }
     </style>
 </head>
@@ -191,7 +215,7 @@
     </div>
 
     <footer>
-        🌐 Twitter | Discord | Telegram<br>
+        🌐 Twitter <br>
         🦔 Made with YES, powered by chaos.
     </footer>
 </body>
