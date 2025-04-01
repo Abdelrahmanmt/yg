@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$YESHOG – The Memecoin of Infinite Positivity</title>
+    <style>
+        @keyframes float {
+            0% { transform: translatey(0px); }
+            50% { transform: translatey(-20px); }
+            100% { transform: translatey(0px); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(to bottom right, #fffaf0, #ffe4e1);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #fff0f5;
+            padding: 80px 20px 60px 20px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        header p {
+            font-size: 1.5em;
+        }
+
+        .cta-buttons {
+            margin-top: 30px;
+        }
+
+        .cta-buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: white;
+            background-color: #ff69b4;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-buttons a:hover {
+            background-color: #ff1493;
+            transform: scale(1.1);
+        }
+
+        .floating-hog {
+            position: absolute;
+            width: 100px;
+            right: 30px;
+            top: 20px;
+            animation: float 4s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        .section {
+            padding: 60px 20px;
+            background: #fdfdfd;
+            border-top: 2px dashed #eee;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+        }
+
+        .flip-card-front {
+            background-color: #fff0f5;
+        }
+
+        .flip-card-back {
+            background-color: #ffe4e1;
+            transform: rotateY(180deg);
+        }
+
+        .moving-bg {
+            position: fixed;
+            top: 20%;
+            left: -10%;
+            width: 120px;
+            opacity: 0.5;
+            animation: moveAcross 30s linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes moveAcross {
+            0% { left: -20%; transform: rotate(0deg); }
+            100% { left: 120%; transform: rotate(720deg); }
+        }
+
+        footer {
+            background: #f0f0f0;
+            padding: 40px 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="GnO6ca9WAAAsOI9.jpg" class="floating-hog" alt="Hedgehog">
+        <h1>haha yes... to the moon 🚀</h1>
+        <p>Join the wholesome hedgehog revolution. One “yes” at a time.</p>
+        <div class="cta-buttons">
+            <a href="#">🚀 Get $YESHOG</a>
+        </div>
+    </header>
+
+    <img src="GnO6ca9WAAAsOI9.jpg" class="moving-bg" alt="Hedgehog Float">
+
+    <div class="section">
+        <h2>📊 Tokenomics</h2>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">Total Supply</div>
+                <div class="flip-card-back">420,690,000</div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">Burn Rate</div>
+                <div class="flip-card-back">1 “no” = 1 burn</div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">Community Wallet</div>
+                <div class="flip-card-back">10% for memes</div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">Founder Wallet</div>
+                <div class="flip-card-back">Who? YES.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        🌐 Twitter | Discord | Telegram<br>
+        🦔 Made with YES, powered by chaos.
+    </footer>
+</body>
+</html>
